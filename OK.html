@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<h1>Chuyển đổi tiền tệ</h1>
+<form onsubmit="return false;">
+    <label for="amount">Nhập số tiền:</label>
+    <input type="number" id="amount" name="amount" placeholder="Nhập số tiền" required>
+
+    <label for="conversionType">Chọn loại chuyển đổi:</label>
+    <select id="conversionType" name="conversionType" required>
+        <option value="vndToUsd">Tiền Việt sang Tiền Đô</option>
+        <option value="usdToVnd">Tiền Đô sang Tiền Việt</option>
+    </select>
+    <button type="button" onclick="convertCurrency()">Chuyển đổi</button>
+</form>
+<div id="result"></div>
+
+<script src="OK.js"></script>
+</body>
+</html>
